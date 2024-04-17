@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: software_takeout
+  datasource:
+    url: jdbc:mysql://localhost:3306/andexam?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: 101.42.34.253
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 开启mp运行日志
+    map-underscore-to-camel-case: false # 驼峰映射
+  mapper-locations: classpath:/mapper/*.xml

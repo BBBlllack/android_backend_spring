@@ -1,0 +1,11 @@
+GET http://localhost:8080/category/get?type=all
+
+
+###
+
+GET http://localhost:8080/category/get/?type=children&pid=2
+
+
+###
+GET http://localhost:8080/paper/get?type=latest
+
